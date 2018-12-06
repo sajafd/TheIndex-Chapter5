@@ -35,12 +35,18 @@ class BookList extends Component {
 
   render() {
     // console.log(this.state.books);
-    console.log(this.props.match.params.bookColor);
+    // console.log(this.props.match.params.bookColor);
+
+    //const color = this.props.match.params.color;
+    //let books = this.state.filterBooks;
+
+    //if (color) books = books.filter(book => book.color === color);
 
     return (
       <div className="books">
         <h3>Books</h3>
         <SearchBar changeHandler={this.filterBooks} />
+        {/* <SearchBar changeHandler={() => alert("Search Books")} /> */}
         <BookTable books={this.state.books} />
       </div>
     );

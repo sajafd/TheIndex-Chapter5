@@ -31,6 +31,9 @@ class App extends Component {
     return instance.get("/api/books/").then(res => res.data);
   }
 
+  // here we combined the two loadings into on. Could also do 2 loadings and have the getView() check both loadings
+  // that makes it load a bit faster
+
   componentDidMount() {
     this.fetchAllAuthors()
       .then(authors =>

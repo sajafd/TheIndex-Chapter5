@@ -10,10 +10,11 @@ class Sidebar extends Component {
       <div id="sidebar">
         <img src={logo} className="logo" alt="the index logo" />
         <section>
-          <h4 className="menu-item active">
+          <h4 className="menu-item">
             <NavLink to="/authors">AUTHORS</NavLink>
-            <div />
-            <NavLink to="/books">Books</NavLink>
+          </h4>
+          <h4 className="menu-item">
+            <NavLink to="/books">BOOKS</NavLink>
           </h4>
         </section>
       </div>
